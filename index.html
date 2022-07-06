@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Launch Checklist</title>
@@ -6,14 +6,25 @@
         <script src = "scriptHelper.js"></script>
         <script src = "script.js"></script>
         <script src = "bundle.js"></script>
+        
     </head>
     <body>
         <h1>Launch Checklist Form</h1>
+        
         <div id="missionTarget" data-testid="missionTarget">
             <!-- Fetch some planetary data -->
+            <h2>Mission Destination</h2>
+            <ol>
+                <li>Name: </li>
+                <li>Diameter: </li>
+                <li>Star: ${star}</li>
+                <li>Distance from Earth: </li>
+                <li>Number of Moons: </li>
+            </ol>
+            <img src="">
         </div>  
         <div id="launchForm">
-            <form data-testid="testForm">
+            <form data-testid="testForm" >
                 <div class="formField">
                     <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
                 </div>
@@ -26,9 +37,13 @@
                 <div class="formField">
                     <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
                 </div>
-                <button id="formSubmit">Submit</button>
+                <button id="formSubmit" onclick="formSubmission(document)">Submit </button>
+              
             </form>
+           
+
         </div>
+      
         <div id="launchStatusCheck">
             <h2 id="launchStatus" data-testid="launchStatus">Awaiting Information Before Launch</h2>
             <div  id="faultyItems" data-testid="faultyItems">
