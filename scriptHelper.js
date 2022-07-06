@@ -32,6 +32,7 @@ function validateInput(testInput) {
    
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
+    
     pilot = document.querySelector("input[name=pilotName]").value;
      copilot = document.querySelector("input[name=copilotName]").value;
        fuelLevel = document.querySelector("input[name=fuelLevel]").value;

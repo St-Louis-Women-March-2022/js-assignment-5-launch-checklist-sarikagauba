@@ -17,7 +17,7 @@
             <ol>
                 <li>Name: </li>
                 <li>Diameter: </li>
-                <li>Star: ${star}</li>
+                <li>Star: </li>
                 <li>Distance from Earth: </li>
                 <li>Number of Moons: </li>
             </ol>
@@ -40,8 +40,12 @@
                 <button id="formSubmit" onclick="formSubmission(document)">Submit </button>
               
             </form>
-           
+<script>
+    document.querySelector("#formSubmit").addEventListener("click", function(event) {
+    event.preventDefault();
+}, false);
 
+</script>
         </div>
       
         <div id="launchStatusCheck">
