@@ -62,7 +62,6 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
                         document.getElementById("launchStatus").style.color = 'green';
                         document.getElementById("launchStatus").innerHTML = 'Shuttle ready for launch';
                     }
-                    addDestinationInfo(document);
                     document.getElementById("faultyItems").style.visibility = 'visible';
 
                 } else {
@@ -84,12 +83,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 
 async function myFetch() {
     let planetsReturned;
-
     planetsReturned = await fetch("https://handlers.education.launchcode.org/static/planets.json").then( function(response) {
-
-        // response.json().then( function(json){
-        //     console.log(json);
-        // });
         return response.json();
         });
 
