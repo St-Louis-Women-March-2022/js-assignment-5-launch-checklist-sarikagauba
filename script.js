@@ -1,6 +1,9 @@
 // Write your JavaScript code here!
 
 window.addEventListener("load", function() {
+    document.querySelector("#formSubmit").addEventListener("click", function(event) {
+        event.preventDefault();
+    }, false);
     let listedPlanets;
     // Set listedPlanetsResponse equal to the value returned by calling myFetch()
     let listedPlanetsResponse = myFetch();
