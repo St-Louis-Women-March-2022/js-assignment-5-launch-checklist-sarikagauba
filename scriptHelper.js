@@ -41,7 +41,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
       if(validateInput(pilot) === "Empty" || validateInput(copilot) === "Empty" || validateInput(fuelLevel) === "Empty" || validateInput(cargoLevel) === "Empty"){
         alert("All fields are required");
       } else {
-      if((validateInput(pilot) === "Not a Number") || (validateInput(cargoLevel) === "Is a Number") || (validateInput(fuelLevel) == "Is a Number")||(validateInput(copilot) != "Not a Number")){
+      if((validateInput(pilot) != "Not a Number") || (validateInput(cargoLevel) != "Is a Number") || (validateInput(fuelLevel) != "Is a Number")||(validateInput(copilot) != "Not a Number")){
         alert("Make sure to enter valid information for each field");
     } else {
                     let pilotString = "Pilot " + pilot + " is ready for launch.";
