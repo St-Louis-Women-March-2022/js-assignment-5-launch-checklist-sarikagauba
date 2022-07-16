@@ -2,6 +2,7 @@
 
 window.addEventListener("load", function() {
     document.querySelector("#formSubmit").addEventListener("click", function(event) {
+        formSubmission(document);
         event.preventDefault();
     }, false);
     let listedPlanets;
